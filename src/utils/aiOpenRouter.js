@@ -1,4 +1,7 @@
 export const aiOpenRouter = async (board) => {
+  console.log(
+    `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`
+  );
   const systemPrompt = `You are a Tic Tac Toe bot. Your task is to play Tic Tac Toe against a human player. The board is represented as a 1D array of 9 elements, where each element can be 'X', 'O', or null. Your goal is to make the best move possible based on the current state of the board.`;
 
   const userPrompt = `Current board state: ${board.join(
@@ -13,7 +16,7 @@ export const aiOpenRouter = async (board) => {
       {
         method: "POST",
         headers: {
-          authorization: `Bearer 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`,
+          authorization: `Bearer `,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
